@@ -13,11 +13,8 @@ Pada seri ini akan ditunjukkan langkah per langkah pembuatan aplikasi sederhana 
 Nah, aplikasi JavaFX apa yang akan kita buat pada seri Cemana? kali ini?
 
 Aplikasi JavaFX yang dibuat ini adalah hasil pengerjaan soal UTS mata kuliah PBO semester 4 program studi D4 Teknologi Rekayasa Perangkat Lunak Institut Teknologi Del tempat saya mengajar saat ini.
-
---
-Institut Teknologi Del - https://www.del.ac.id/
-Facebook IT Del - https://www.facebook.com/Institut.Teknologi.Del
---
+- Institut Teknologi Del - https://www.del.ac.id/
+- Facebook IT Del - https://www.facebook.com/Institut.Teknologi.Del
 
 Pada soal diminta membuat aplikasi konversi data, yaitu nilai dan mata uang. Alur programnya digambarkan sebagai berikut ini:
 1. Terdapat layar Login. Pengguna harus mengisi username dan password agar dapat masuk ke halaman Dashboard. Pada layar ini terdapat pengecekan form sebelum pengecekan data otentikasi.
@@ -34,7 +31,7 @@ Pada soal diminta membuat aplikasi konversi data, yaitu nilai dan mata uang. Alu
 
 7. Beberapa fitur dan juga catatan terkait aplikasi tersebut adalah bahwa aplikasi harus memiliki menu, mengimplementasi sebuah abstract class dan membuat sub class-nya. Lalu fitur lainnya seperti halaman biodata.
 
---
+<hr>
 Silahkan membagikan informasi ini. 
 
 Di-subscribe juga channel "Roy Deddy Tobing" sebagai dukungan Anda bagi kami. Nyalakan lonceng notifikasi untuk mengingatkan Anda informasi dan konten menarik lainnya.
