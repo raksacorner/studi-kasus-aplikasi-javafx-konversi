@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="mnuAbout" mnemonicParsing="false" text="About" />
+                  <MenuItem fx:id="mnuLogout" mnemonicParsing="false" text="Logout" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem fx:id="mnuKonversiNilai" mnemonicParsing="false" text="Konversi Nilai" />
+                  <MenuItem fx:id="mnuHitungIP" mnemonicParsing="false" text="Hitung IP" />
+                  <MenuItem fx:id="mnuHitungIPProgramatically" mnemonicParsing="false" text="Hitung IP (Programatically)" />
+                  <MenuItem fx:id="mnuKonversiMataUang" mnemonicParsing="false" text="Konversi Mata Uang" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false">
+               <graphic>
+                  <Label fx:id="mnuBiodata" text="Biodata" />
+               </graphic></Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ScrollPane fx:id="spIsi" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" />
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="396.0" prefWidth="636.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="636.0" style="-fx-background-color: aa0011;" text="GRAFIK MATA UANG" textFill="#fcf9f9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefWidth="200.0">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="247.0" prefWidth="252.0">
+                     <children>
+                        <GridPane alignment="CENTER" prefHeight="150.0" prefWidth="250.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="50.0" minWidth="0.0" percentWidth="0.0" prefWidth="50.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" percentWidth="0.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" percentWidth="0.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="No" GridPane.hgrow="ALWAYS" />
+                              <Label fx:id="lblNo1" text="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                              <Label fx:id="lblNo2" text="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Nilai" GridPane.columnIndex="2" />
+                              <TextField fx:id="tfNilai2" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="tfNilai1" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" text="Tanggal" GridPane.columnIndex="1" />
+                              <Label fx:id="tfNilaiKonversi14" alignment="CENTER" contentDisplay="CENTER" prefWidth="25.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="lblNo21" text="3" GridPane.rowIndex="3" />
+                              <Label fx:id="lblNo22" text="4" GridPane.rowIndex="4" />
+                              <Label fx:id="lblNo23" text="5" GridPane.rowIndex="5" />
+                              <TextField fx:id="tfNilai3" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="tfNilai4" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="tfNilai5" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <DatePicker fx:id="dpTanggal1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <DatePicker fx:id="dpTanggal5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <DatePicker fx:id="dpTanggal4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <DatePicker fx:id="dpTanggal3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <DatePicker fx:id="dpTanggal2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                        <Button fx:id="btnGenerate" mnemonicParsing="false" text="Generate Grafik">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <AnchorPane prefHeight="138.0" prefWidth="331.0">
+                     <children>
+                        <LineChart fx:id="lcMataUang" prefHeight="291.0" prefWidth="308.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </LineChart>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
