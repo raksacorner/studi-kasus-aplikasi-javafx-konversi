@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="vbIsi" prefHeight="600.0" prefWidth="636.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="36.0" prefWidth="636.0" style="-fx-background-color: aa0011;" text="HITUNG IP" textFill="#fcf9f9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="96.0" prefWidth="636.0" style="-fx-background-color: #FFC0CB;">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label prefHeight="37.0" prefWidth="94.0" text="NIM:" textOverrun="CLIP" wrapText="true">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="tfNIM" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" prefHeight="37.0" prefWidth="94.0" text="Nama:" textAlignment="RIGHT" textOverrun="CLIP" wrapText="true">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="tfNama" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="636.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="178.0" text="Jumlah Nilai (maks. 15 nilai): " textOverrun="CLIP" wrapText="true">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <ChoiceBox fx:id="cbOpsiJumlah" prefHeight="27.0" prefWidth="87.0" style="-fx-border-color: #9C225D; -fx-background-color: #FFFFFF;" />
+                        <Button fx:id="btnOK" mnemonicParsing="false" style="-fx-border-color: #9C225D; -fx-background-color: #FFFFDD;" text="OK">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="vbHitung" alignment="CENTER" />
+            <VBox alignment="CENTER">
+               <children>
+                  <HBox fx:id="hbIsi151" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnHitung" mnemonicParsing="false" text="Hitung IP">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="50.0" text="No" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="150.0" text="Mata Kuliah" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="50.0" text="SKS" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="50.0" text="Nilai" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="50.0" text="Grade" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi1" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="1." />
+                        <TextField fx:id="tfMataKuliah1" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS1" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai1" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi1" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi2" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="2." />
+                        <TextField fx:id="tfMataKuliah2" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS2" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai2" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi2" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi3" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="3." />
+                        <TextField fx:id="tfMataKuliah3" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS3" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai3" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi3" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi4" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="4." />
+                        <TextField fx:id="tfMataKuliah4" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS4" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai4" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi4" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi5" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="5." />
+                        <TextField fx:id="tfMataKuliah5" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS5" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai5" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi5" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi6" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="6." />
+                        <TextField fx:id="tfMataKuliah6" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS6" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai6" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi6" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi7" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="7." />
+                        <TextField fx:id="tfMataKuliah7" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS7" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai7" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi7" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi8" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="8." />
+                        <TextField fx:id="tfMataKuliah8" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS8" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai8" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi8" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi9" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="9." />
+                        <TextField fx:id="tfMataKuliah9" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS9" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai9" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi9" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi10" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="10." />
+                        <TextField fx:id="tfMataKuliah10" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS10" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai10" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi10" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi11" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="11." />
+                        <TextField fx:id="tfMataKuliah11" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS11" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai11" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi11" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi12" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="12." />
+                        <TextField fx:id="tfMataKuliah12" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS12" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai12" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi12" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi13" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="13." />
+                        <TextField fx:id="tfMataKuliah13" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS13" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai13" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi13" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi14" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="14." />
+                        <TextField fx:id="tfMataKuliah14" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS14" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai14" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi14" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hbIsi15" alignment="CENTER" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefWidth="50.0" text="15." />
+                        <TextField fx:id="tfMataKuliah15" alignment="CENTER" prefWidth="150.0" text="-">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="tfSKS15" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <TextField fx:id="tfNilai15" alignment="CENTER" prefWidth="50.0" text="0" />
+                        <Label fx:id="lblNilaiKonversi15" alignment="CENTER" prefWidth="50.0" text="-" wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
